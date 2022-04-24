@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{natbib}
+\usepackage{float}%稳定图片位置
+\usepackage{graphicx,subfig}%画图
+\usepackage{caption}
+\usepackage[english]{babel}
+\usepackage{indentfirst}%缩进
+\usepackage{enumerate}%加序号
+\usepackage{multirow}%合并行
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{geometry}%设置页边距
+\geometry{top=1.5in,bottom=1.5in,left=1in,right=1in}
+\begin{document}
+\begin{center}
+    \Large{\textbf{SI618 Exploratory Project Proposal}}\\
+    \large{Chongdan Pan $\bullet$ pandapcd $\bullet$ pandapcd@umich.edu}
+\end{center}
+\section{Summary and Motivation}
+Recently, cryptocurrencies like Bitcoins have become the hottest topic all over the world. Cryptocurrencies are being used in multiple areas including decentralized finance, application development, art collections, and etc. The market value also increased dramatically in the past 10 years, from less than one hundred dollars to more than two trillion dollars.
+
+\par However, cryptocurrencies is not only about price. Some people are complaining that the Bitcoins are wasting more and more energy for meaningless purpose while others are amazed by its decentralized transaction. Therefore, this project will perform a time series analysis, to investigate about these ideas and try to find relation between cryptocurrencies' users, miners, transactions and price.
+
+\section{Dataset}
+\begin{itemize}
+    \item Binance has a lot of public REST API providing cryptocurrencies' historical market data of different frequencies at different times. \href{https://binance-docs.github.io/apidocs/spot/en/#market-d\\ata-endpoints}{(https://binance-docs.github.io/apidocs/spot/en/\#\\market-data-endpoints)} The data are well-structured and will be used at a daily frequency. For simplicity, only following three fields will be used.
+    \begin{itemize}
+        \item \textbf{Close:} The close price in USD of cryptocurrencies everyday at Binance.
+        \item \textbf{TradeVolume:} The total trade volume of cryptocurrencies everyday at Binance.
+        \item \textbf{TradeCount:} The total trade count of cryptocurrencies everyday at Binance.
+    \end{itemize}
+
+    \item \href{https://www.blockchain.com/charts/difficulty}Blockchain.com provides a lot of statistical data about BTC, especially about its blockchain and the networking. The data will be used at a daily frequency and with follow fields:
+    \begin{itemize}
+        \item \textbf{Unique Address: } Every user needs a unique address to receive a BTC. The number of unique address can reflect the attitude of BTC's true believers.
+        \item \textbf{Miners Revenue: } Miners are people who use their computers to guess the nounce number of a block. The miner who first get the nounce, will be rewarded with some cryptocurrencies. Miners can sell the cryptocurrencies for revenue.
+        \item \textbf{Total Hast Rate:} Mining hash rate is a key security metric. The more hashing power in the network, the greater its security and its overall resistance to attack. Miners are performing hashing to to guess whether the nounce is correct
+        \item \textbf{Difficulty: }The difficult is measured by the times of hash rate. Difficulty is adjusted every 2016 blocks (every 2 weeks approximately) so that the average time between each block remains 10 minutes.
+        \item \textbf{Total Market Value: } The total market value of BTC in USD, it's calculated by the product of price and the total amount of BTC.
+        \item \textbf{Transaction Fee: } Different from exchange, the transaction of blockchain is changing due to the number of miners and transactions.
+        \item \textbf{Transactions: } The transaction happens on the blockchain. Some transaction are made through blockchain while others are through exchange. However, it's only those with blockchain really transfer the cryptocurrencies to one address from another.
+    \end{itemize}
+\end{itemize}
+\section{Proposed Analyses}
+\begin{itemize}
+    \item \textbf{Does the blockchain network do a good job at controlling the production rate of block? } According to the BTC's white paper, the BTC network should be able to adjust its difficulty so that the production rate of a block is constant. One may doubt that since the adjustment is performed decentrally. The relation will be calculated through diving the difficulty by the total hash rate. The relation's distribution will be analyzed.
+    \item \textbf{Does higher price and total market value lead to more users and transaction?} There is no doubt that higher price and market value will will motivates the markets, but does it leads to more actions in the market? Pearson correlation coefficient and other indicators will be used to find their relation.
+    \item \textbf{What's the better cryptocurrencies for investment?} BTC and ETH are the big two of the cryptocurrencies, which one will make more profit if the investor invest certain amount of money into it every week? A simulation will be performed on the investment to find out which one can bring more asset.
+    \item \textbf{Are the trades on Binance behave in the same way as the BTC believers?} Although everyone is trading BTC, there's huge difference between using Binance and Blockchain itself. Visualizations will be made to find out the relationship.
+    \item \textbf{What leads to a higher transaction fee?}It makes sense that the transaction fee will be higher when there are many transaction competing for the computer resources? Regression and visualizations will used to find some insights.
+    \item \textbf{What's the distribution of cryptocurrencies's volatility?} Cryptocurrencies market is well known for its high volatility, but it may not always happen. Visualization and standardization will be performed to find out its distribution.
+    \item \textbf{Invest in hash rate or cryptocurrencies, which option is a better idea?} Investors may be struggling to buy a powerful computer or buy some cryptocurrencies to make profit. Visualization and calculation will be made to help the investors to make the best choice at the time.
+    \item \textbf{Can we predict the price of cryptocurrencies based on its previous data?}
+    linear regression will be used to predict the price of cryptocurrencies based on its data in previous seven days, and investment decision will made by it. It's interesting to see how it works.
+\end{itemize}
+\end{document}

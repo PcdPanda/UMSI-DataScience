@@ -1,0 +1,6 @@
+**/.ipynb_checkpoints/
+**/__pycache__
+**/train.csv
+**/Logs
+SI630NLP/HW/HW02/runs
+**/wiki-bios*.txt

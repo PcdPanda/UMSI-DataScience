@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- required libs for embedding vega charts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.4.0"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+<h1>This is the pandapcd's SI649 lab4 Assignment</h1>
+<!-- Location to insert the visualization. You can rename the id. -->
+<h2>Vis1</h2>
+<div id="vis1"></div>
+<h2>Vis2</h2>
+<div id="vis2"></div>
+<h2>Vis3</h2>
+<div id="vis3"></div>
+<h2>Vis4</h2>
+<div id="vis4"></div>
+<script type="text/javascript">
+	//assign the location of your chart specification to the variable "json_spec_addr"
+	//finding the dom with the id "visualization", and render chart "json_spec_addr" there.
+    vegaEmbed('#vis1', "vis1.json",{}).then(function(result) {}).catch(console.error);
+    vegaEmbed('#vis2', "vis2.json",{}).then(function(result) {}).catch(console.error);
+    vegaEmbed('#vis3', "vis3.json",{}).then(function(result) {}).catch(console.error);
+    vegaEmbed('#vis4', "vis4.json",{}).then(function(result) {}).catch(console.error);
+	//because you need to load the chart spec (in json),
+	//	the webpage will throw an error if you do not run a server 
+	
+</script>
+</body>
+</html>

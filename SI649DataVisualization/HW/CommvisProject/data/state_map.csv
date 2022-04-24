@@ -1,0 +1,57 @@
+State,Acronym,id
+alabama,AL,1.0
+alaska,AK,2.0
+american samoa,AS,
+arizona,AZ,4.0
+arkansas,AR,5.0
+california,CA,6.0
+colorado,CO,8.0
+connecticut,CT,9.0
+delaware,DE,10.0
+district of columbia,DC,11.0
+florida,FL,12.0
+georgia,GA,13.0
+guam,GU,
+hawaii,HI,15.0
+idaho,ID,16.0
+illinois,IL,17.0
+indiana,IN,18.0
+iowa,IA,19.0
+kansas,KS,20.0
+kentucky,KY,21.0
+louisiana,LA,22.0
+maine,ME,23.0
+maryland,MD,24.0
+massachusetts,MA,25.0
+michigan,MI,26.0
+minnesota,MN,27.0
+mississippi,MS,28.0
+missouri,MO,29.0
+montana,MT,30.0
+nebraska,NE,31.0
+nevada,NV,32.0
+new hampshire,NH,33.0
+new jersey,NJ,34.0
+new mexico,NM,35.0
+new york,NY,36.0
+north carolina,NC,37.0
+north dakota,ND,38.0
+northern mariana is,MP,
+ohio,OH,39.0
+oklahoma,OK,40.0
+oregon,OR,41.0
+pennsylvania,PA,42.0
+puerto rico,PR,72.0
+rhode island,RI,44.0
+south carolina,SC,45.0
+south dakota,SD,46.0
+tennessee,TN,47.0
+texas,TX,48.0
+utah,UT,49.0
+vermont,VT,50.0
+virginia,VA,51.0
+virgin islands,VI,
+washington,WA,53.0
+west virginia,WV,54.0
+wisconsin,WI,55.0
+wyoming,WY,56.0

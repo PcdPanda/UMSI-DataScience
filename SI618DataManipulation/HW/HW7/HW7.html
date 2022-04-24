@@ -1,0 +1,43 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <crowd-instructions link-text="View instructions" link-type="button">
+    <short-summary>
+      <p>Thank you for helping us with our coding task. In this HIT we will ask you to read a comment from an online news website and judge whether it is toxic</p>
+    </short-summary>
+
+    <detailed-instructions>
+      <h3>According to different definitions, toxic comments are; (1) "rude, disrespectful, orunreasonable comment; likely to make people leave a discussion.", 
+      (2) "content that can offend or harm its recipients, including hate speech, racism, and offensive language", and "offensive, abusive, hateful etc". The 
+      follow-up question asks you determine if the comment is targeted (at an individual or group).</h3>
+      <p>Include additional information</p>
+    </detailed-instructions>
+
+  </crowd-instructions>
+
+
+<div>
+    <p style="font-weight: bold;">${comment_text}</p>
+    <ol>
+        <li>Is the above comment toxic?</li>
+        <crowd-radio-group>
+            <crowd-radio-button name="Question 1 - Yes " value="toxic1.yes ">Yes</crowd-radio-button>
+            <crowd-radio-button name="Question 1 - No " value="toxic1.no ">No</crowd-radio-button>
+        </crowd-radio-group>
+        <li>If the above comment is toxic, is it targeted at a group or an individual?</li>
+      	<crowd-radio-group>
+    	    <crowd-radio-button name="Question 2 - Yes " value="target2.yes ">Yes</crowd-radio-button>
+    	    <crowd-radio-button name="Question 2 - No" value="target2.no ">No</crowd-radio-button>
+    	    <crowd-radio-button name="Question 2 - N/A " value="target2.na ">N/A</crowd-radio-button>
+    	</crowd-radio-group>
+    </ol>
+</div>
+
+
+</crowd-form>

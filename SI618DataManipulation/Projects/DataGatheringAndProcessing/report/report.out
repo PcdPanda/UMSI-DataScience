@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Motivation}{}% 1
+\BOOKMARK [1][-]{section.2}{Data Source}{}% 2
+\BOOKMARK [1][-]{section.3}{Data Manipulation}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Preprocessing}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Strategy Simulation}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Automatic Invesment}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.2}{MACD}{subsection.3.2}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Bollinger Band with Volume}{subsection.3.2}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Postprocessing}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Analysis and Visualization}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{From the perspective of price, what's the difference between cryptocurrencies and other assets.}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Whether cryptocurrencies are a good investment asset for retail investors? If so, how should they make an investment?}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Automatic Investment}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.2}{MACD Strategy}{subsection.4.2}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Bollinger Strategy}{subsection.4.2}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Is there any relation between cryptocurrencies and other assets?}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.4}{Conclusion}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Challenges and Limitations}{}% 18

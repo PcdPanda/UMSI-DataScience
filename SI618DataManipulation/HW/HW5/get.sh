@@ -1,0 +1,1 @@
+hadoop fs -getmerge total_reviews_per_category_output total_reviews_per_category_output.txt
